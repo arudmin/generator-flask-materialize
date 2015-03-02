@@ -1,4 +1,4 @@
-![](http://i.imgur.com/GMBHlAI.jpg)
+![](http://i.imgur.com/ZsCRamv.jpg)
 # Yeoman Flask Generator for Heroku with Materialize CSS Framework
 
   Generator to use Yeoman on a Flask project then deploying on Heroku platform.
