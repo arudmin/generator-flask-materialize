@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <title><%= appName %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="<%= appName %>">
+
+    <!-- Place this data between the <head> tags of your website -->
+    <meta name="description" content="Describe your App" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@twitter_name">
+    <meta name="twitter:title" content="<%= appName %>">
+    <meta name="twitter:description" content="Describe your App">
+    <meta name="twitter:creator" content="@twitter_name">
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="{{ static('img/image.jpg') }}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="<%= appName %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://" />
+    <meta property="og:image" content="{{ static('img/image.jpg') }}"/>
+    <meta property="og:description" content="Describe your App" /> 
+    <meta property="og:site_name" content="<%= appName %>" />
+    <meta property="fb:admins" content="FB Page number" />
+
+    <link href="{{ static('img/Icon-60@3x.png') }}" sizes="180x180" rel="apple-touch-icon">
+    <link href="{{ static('img/Icon-76@2x.png') }}" sizes="152x152" rel="apple-touch-icon">
+    <link href="{{ static('img/Icon-60@2x.png') }}" sizes="120x120" rel="apple-touch-icon">
+    <link href="{{ static('img/Icon-76.png') }}" sizes="76x76" rel="apple-touch-icon">
+    <link href="{{ static('img/startup.png') }}" rel="apple-touch-startup-image">
+ 
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{{ static('css/style.css') }}" media="screen,projection"/>
+    <% if (addtohomescreen) { %><link type="text/css" rel="stylesheet" href="{{ static('css/addtohomescreen.css') }}" media="screen,projection"/><% } %>
+    <% if (sociallikes) { %><link type="text/css" rel="stylesheet" href="{{ static('css/social-likes_flat.css') }}" media="screen,projection"/><% } %>
+
+  </head>
+
+  <body>
+    {% include 'preloader.html' %}
+
+    {% block body %}{% endblock %}
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>!window.jQuery && document.write("{{ static('js/jquery-2.1.3.min.js') }}")</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <!-- <script src="{{ static('js/materialize.min.js') }}"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <% if (addtohomescreen) { %><script src="{{ static('js/addtohomescreen.min.js') }}"></script><% } %>
+    <% if (sociallikes) { %><script src="{{ static('js/social-likes.min.js') }}"></script><% } %>
+    <script src="{{ static('js/init.js') }}"></script>
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+  </body>
+</html>
+

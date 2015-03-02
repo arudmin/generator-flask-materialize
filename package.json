@@ -1,0 +1,46 @@
+{
+  "name": "generator-flask-materialize",
+  "version": "0.0.6",
+  "description": "Yeoman generator for Flask project to be deployed to materialize",
+  "homepage": "https://github.com/arudmin/generator-flask-materialize",
+  "author":{
+    "name": "Vladimir Zhelyabovskiy",
+    "email": "spb-vladimir@yandex.com",
+    "url": "https://github.com/arudmin/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arudmin/generator-flask-materialize.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/arudmin/generator-flask-materialize/issues",
+    "email" : "spb-vladimir@yandex.com"
+  },
+  "dependencies": {
+    "yeoman-generator": ">=0.13.4"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.4"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "keywords": [
+    "yeoman",
+    "yeoman-generator",
+    "flask-generator",
+    "python",
+    "materialize",
+    "dokku",
+    "flask",
+    "yo",
+    "frameworks",
+    "micro frameworks",
+    "generator",
+    "cli",
+    "heroku",
+    "tool",
+    "development"
+  ]
+}
