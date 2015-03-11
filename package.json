@@ -1,6 +1,6 @@
 {
   "name": "generator-flask-materialize",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Yeoman generator for Flask project to be deployed to materialize",
   "homepage": "https://github.com/arudmin/generator-flask-materialize",
   "author":{
